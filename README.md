@@ -16,9 +16,10 @@ PHPLogger is a logger project which is 100% written in [PHP](https://www.php.net
 - PHP
 - PHP (V.7 or higher)
 
-````
+~~****************************************************************\_\_\_****************************************************************~~
 
 ### Project Structure
+
 ```
 PHPLogger (Project)
 │__ README.md
@@ -29,7 +30,7 @@ PHPLogger (Project)
 │   │__ Logger.class.php
 ```
 
-````
+~~****************************************************************\_\_\_****************************************************************~~
 
 ### Usability and Implementation
 
@@ -60,92 +61,109 @@ PHPLogger (Project)
 
 6. The Log file will be created with name [YYYYMMDD].log in the automatically created Logs folder inside the Logger Folder
 
-```
-
+~~****************************************************************\_\_\_****************************************************************~~
 
 ### Methods
 
- - #### createLogDirectory()
-    > Method Summary - Creates Logs folder if this doesn't exists
-    >
-    > Note - Do not change this method, changing this method may result in breaking the project **if necessary change it at your one risk!**
+- #### createLogDirectory()
 
- - #### getFileName()
-    > Method Summary - GET log file name [YYYYMMDD] (Ex: 20210815.log)
-    >
-    > Note - Do not change this method, changing this method may result in breaking the project **if necessary change it at your one risk!**
+  > Method Summary - Creates Logs folder if this doesn't exists
+  >
+  > Note - Do not change this method, changing this method may result in breaking the project **if necessary change it at your one risk!**
 
- - #### createLogFile( $nome_ficheiro )
-    > Method Summary - Creates Logs file if this doesn't exists
-    >> Vars:
-    >>
-    >> `$nome_ficheiro` - full path to logger file to be created
-    >>
-    > Note - Do not change this method, changing this method may result in breaking the project **if necessary change it at your one risk!**
+- #### getFileName()
 
- - #### getLogFile( $nome_ficheiro )
-    > Method Summary - GET current log file [The current day Log fie and the one which will be written]
-    >> Vars:
-    >>
-    >> `$nome_ficheiro` - full path to the current day logger file
-    >>
-    > Note - Do not change this method, changing this method may result in breaking the project **if necessary change it at your one risk!**
+  > Method Summary - GET log file name [YYYYMMDD] (Ex: 20210815.log)
+  >
+  > Note - Do not change this method, changing this method may result in breaking the project **if necessary change it at your one risk!**
 
- - #### debug( $msg )
-    > Method Summary - Writes DEBUG level message
-    >> Vars:
-    >>
-    >> `$msg` - Debug level message to be written in the log file
+- #### createLogFile( $nome_ficheiro )
+
+  > Method Summary - Creates Logs file if this doesn't exists
+  >
+  > > Vars:
+  > >
+  > > `$nome_ficheiro` - full path to logger file to be created
+  > >
+  > > Note - Do not change this method, changing this method may result in breaking the project **if necessary change it at your one risk!**
+
+- #### getLogFile( $nome_ficheiro )
+
+  > Method Summary - GET current log file [The current day Log fie and the one which will be written]
+  >
+  > > Vars:
+  > >
+  > > `$nome_ficheiro` - full path to the current day logger file
+  > >
+  > > Note - Do not change this method, changing this method may result in breaking the project **if necessary change it at your one risk!**
+
+- #### debug( $msg )
+
+  > Method Summary - Writes DEBUG level message
+  >
+  > > Vars:
+  > >
+  > > `$msg` - Debug level message to be written in the log file
 
 - #### success( $msg )
-    > Method Summary - Writes SUCCESS level message
-    >> Vars:
-    >>
-    >> `$msg` - Success level message to be written in the log file
 
+  > Method Summary - Writes SUCCESS level message
+  >
+  > > Vars:
+  > >
+  > > `$msg` - Success level message to be written in the log file
 
 - #### warning( $msg )
-    > Method Summary - Writes WARNING level message
-    >> Vars:
-    >>
-    >> `$msg` - Warning level message to be written in the log file
+
+  > Method Summary - Writes WARNING level message
+  >
+  > > Vars:
+  > >
+  > > `$msg` - Warning level message to be written in the log file
 
 - #### warningWithTrace( $msg, $trace )
-    > Method Summary - Writes WARNING level message
-    >> Vars:
-    >>
-    >> `$msg` - Warning level message to be written in the log file
-    >>
-    >> `$trace` - Error stackTrace
 
+  > Method Summary - Writes WARNING level message
+  >
+  > > Vars:
+  > >
+  > > `$msg` - Warning level message to be written in the log file
+  > >
+  > > `$trace` - Error stackTrace
 
 - #### error( $msg )
-    > Method Summary - Writes ERROR level message
-    >> Vars:
-    >>
-    >> `$msg` - Error level message to be written in the log file
+
+  > Method Summary - Writes ERROR level message
+  >
+  > > Vars:
+  > >
+  > > `$msg` - Error level message to be written in the log file
 
 - #### errorWithTrace( $msg, $trace )
-    > Method Summary - Writes ERROR level message
-    >> Vars:
-    >>
-    >> `$msg` - Error level message to be written in the log file
-    >>
-    >> `$trace` - Error stackTrace
 
+  > Method Summary - Writes ERROR level message
+  >
+  > > Vars:
+  > >
+  > > `$msg` - Error level message to be written in the log file
+  > >
+  > > `$trace` - Error stackTrace
 
 - #### severe( $msg )
-    > Method Summary - Writes SEVERE level message
-    >> Vars:
-    >>
-    >> `$msg` - Severe level message to be written in the log file
+
+  > Method Summary - Writes SEVERE level message
+  >
+  > > Vars:
+  > >
+  > > `$msg` - Severe level message to be written in the log file
 
 - #### severeWithTrace( $msg, $trace )
-    > Method Summary - Writes SEVERE level message
-    >> Vars:
-    >>
-    >> `$msg` - Severe level message to be written in the log file
-    >>
-    >> `$trace` - Error stackTrace
+  > Method Summary - Writes SEVERE level message
+  >
+  > > Vars:
+  > >
+  > > `$msg` - Severe level message to be written in the log file
+  > >
+  > > `$trace` - Error stackTrace
 
-```
+~~****************************************************************\_\_\_****************************************************************~~
