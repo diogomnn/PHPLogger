@@ -186,7 +186,7 @@ class Logger implements ILogger
      */
     public function severe( $msg )
     {
-        $tipo = self::DEBGUG;
+        $tipo = self::SEVERE;
         $nome_ficheiro = $this->getFileName();
         $caminho = $this->getLogFile($nome_ficheiro);  
         $data = $this->getCurrentDate();     
