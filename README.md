@@ -54,7 +54,7 @@ PHPLogger (Project)
         // ... Your PHP Code ...
         
           $logger->debug('Debug Message Examaple');
-          $logger->success('Registration completed with sucess for user ID:[' + $user_id + ']');
+          $logger->success('Registration completed with sucess for user ID:[ ' . $user_id . ' ]');
         
         // ... Your PHP Code ...
     </code>
